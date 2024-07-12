@@ -40,5 +40,92 @@ const hasSoup = foods.includes('soup')
 console.log('Exercise 10 result:', hasSoup);
 
 
+// Exercise 11: Odd numbers from an array
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+
+const odds = [];
+for (const num of nums) {
+  if (!!(num & 1)) {
+    odds.push(num);
+  }
+}
+console.log("Exercise 11 result:", odds);
+
+// 
+/*
+Exercise 12: FizzBuzz with arrays
+
+1) Choose a method to iterate through the `nums` array. 
+
+2. As you loop, sort the numbers into new arrays based on the following rules:
+
+   - Push any number evenly divisible by 3 to an array called `fizz`.
+   - Push any number evenly divisible by 5 to an array called `buzz`.
+   - Push any number that is evenly divisible by 3 and 5 to an array called
+     `fizzbuzz`.
+
+   Note: A single number may meet more than one of the above rules. If it does,
+         it should be placed in multiple arrays. For example, the number `15`
+         will appear in the `fizz`, `buzz`, and `fizzbuzz` arrays.
+
+Complete Exercise 12 in the space below:
+*/
+
+const fizz = []
+const buzz = []
+const fizzbuzz = []
+
+for (let idx = 0; idx < nums.length; idx++) {
+  let num = nums[idx]
+  if (num % 3 === 0) {
+    fizz.push(num)
+  } if (num % 5 === 0) {
+    buzz.push(num)
+  } else if (num % 3 === 0 && num % 5 === 0) {
+  } fizzbuzz.push(num)
+}
+console.log('Exercise 12 Results:');
+console.log('  fizz:', fizz);
+console.log('  buzz:', buzz);
+console.log('  fizzbuzz:', fizzbuzz);
+
+// Exercise 13: Retrieve the Last Array
+const numArray = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
+const numList = numArray.splice(3)
+console.log('Exercise 13 result:', numList);
+
+// Exercise 14: Accessing within nested arrays
+const num = numArray[2].shift()
+console.log('Exercise 14 result:', num);
+
+/*
+Exercise 15: Nested array sum
+
+1) Use nested loops or `forEach()` methods to sum up all numbers within 
+   `numArrays` nested arrays.
+   
+2) Assign the sum to a variable called `total`.
+
+Hint: Be sure to declare and initialize the total variable before the iterations.
+
+Complete Exercise 15 in the space below:
+*/
+
+const sum = 0;
+const total = {}
+for (let i = 0; i < numArray.total; i++) {
+  sum += numArray[i]
+}
+console.log('Exercise 15 result:\n', total);
+
+
+
+
+
 
 
