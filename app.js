@@ -100,7 +100,7 @@ const numList = numArray.splice(3)
 console.log('Exercise 13 result:', numList);
 
 // Exercise 14: Accessing within nested arrays
-const num = numArray[2].shift()
+const num = numArray[2][1]
 console.log('Exercise 14 result:', num);
 
 // Exercise 15: Nested array sum
