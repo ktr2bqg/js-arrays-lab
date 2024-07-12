@@ -104,9 +104,11 @@ const num = numArray[2].shift()
 console.log('Exercise 14 result:', num);
 
 // Exercise 15: Nested array sum
-let sum = 0;
-const total = sum;
-for (let i = 0; i < numArray.total; i++) {
-  sum += numArray[i];
-}
+let total = 0;
+
+numArray.forEach((numArrays) => {
+numArrays.forEach((number) => {
+  total += number
+  })  
+})
 console.log('Exercise 15 result:\n', total);
